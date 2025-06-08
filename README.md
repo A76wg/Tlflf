@@ -8,4 +8,4 @@ Python game, Escape from Flf               *逃离伏拉夫*.
 ##Me
 - Alvis@A76wg🫡🫡🫡
 - Github- https://github.com/A76wg
-- Twitter- https://x.com/juejiqi21
+- Twitter- https://twitter.com/juejiqi21, Alvis@juejiqi21
