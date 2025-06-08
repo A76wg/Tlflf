@@ -5,5 +5,7 @@ Python game, Escape from Flf               *逃离伏拉夫*.
 - “Сегодня я собираюсь съесть детский горячий горшок." That is what he said. 
 - As a Chinese kid, you must avoid being at the same x coordinates or y coordinates to Flf.Or die. 
 
-#Me
+##Me
 - Alvis@A76wg🫡🫡🫡
+- Github- https://github.com/A76wg
+- Twitter- https://x.com/juejiqi21
