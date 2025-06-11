@@ -1,4 +1,4 @@
-# 游戏文件
-游戏 - 逃离伏拉夫<br />
-_v_ 0.2.1 游戏文件
-需要解压压缩包中的文件，并确保其在与"tlflf0.2.1.py"相同的目录下。
+# Game Files & Bug Patch
+Game - Tlflf<br />
+Download files to make sure enjoy them normally.
+Version need to add patched: v0.2.1
