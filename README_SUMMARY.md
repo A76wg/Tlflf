@@ -32,22 +32,25 @@ import pygame
 from levels.level1 import Level1
 from levels.level2 import Level2
 
+#初始化pygame
 pygame.init()
 screen = pygame.display.set_mode((800, 600))
 pygame.display.set_caption("闯关游戏")
 
+#定义关卡列表
 levels = [Level1(screen), Level2(screen)]
-current_level = 0
-running = True
+current_level = 0 #当前关卡索引
 
+#游戏主循环
+running = True
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-
+    #更新当前关卡
     levels[current_level].update()
     levels[current_level].draw()
-
+    #检查关卡是否完成
     if levels[current_level].is_completed:
         current_level += 1
         if current_level >= len(levels):
@@ -72,8 +75,8 @@ class Level1:
     def __init__(self, screen):
         self.screen = screen
         self.is_completed = False
-        self.player = pygame.Rect(50, 50, 50, 50)
-        self.goal = pygame.Rect(700, 500, 50, 50)
+        self.player = pygame.Rect(50, 50, 50, 50)#玩家角色
+        self.goal = pygame.Rect(700, 500, 50, 50)#目标点
 
     def update(self):
         keys = pygame.key.get_pressed()
@@ -81,12 +84,12 @@ class Level1:
         if keys[pygame.K_DOWN]: self.player.y += 5
         if keys[pygame.K_LEFT]: self.player.x -= 5
         if keys[pygame.K_RIGHT]: self.player.x += 5
-
+        #检查是否到达目标
         if self.player.colliderect(self.goal):
             self.is_completed = True
 
     def draw(self):
-        self.screen.fill((0, 0, 0))
+        self.screen.fill((0, 0, 0))#清屏
         pygame.draw.rect(self.screen, (255, 0, 0), self.player)
         pygame.draw.rect(self.screen, (0, 255, 0), self.goal)
 ```
